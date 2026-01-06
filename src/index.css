@@ -1,5 +1,77 @@
-
-
+body{
+  margin: 0px;
+  padding: opx;
+}
+/* nav bar  */
+nav{
+  position: sticky;
+  top: -20px;
+  background-color: rgb(235, 61, 61);
+  display: flex;
+  justify-content: space-around;
+  height: 140px;
+  text-align: center;
+}
+.header-logo{
+  color: black;
+}
+.header-logo:hover{
+  color: azure;
+}
+nav div{
+padding-top: 20px;
+}
+nav ul{
+  display: flex;
+  list-style-type: none;
+  font-weight: bolder;
+ 
+}
+nav li{
+   padding: 10px;
+  margin: 10px;
+  width: 100px;
+  height: 20px;
+  border-radius: 50px;
+ transition: 1s transform;
+  transition: 1ms ease-in-out;
+}
+nav li:hover{
+ font-size: 18px;
+border: 1px solid black;
+ cursor: pointer;
+ color: azure;
+}
+.sign-in button{
+   background-color: rgb(235, 61, 61);
+  height: 50px;
+  width: 120px;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+font-weight: bold;
+}
+.sign-in button:hover{
+cursor: pointer;
+height: 55px;
+  width: 125px;
+  color: azure;
+border-color: azure;
+}
+.screen-mode select{
+background-color: rgb(255, 73, 73);
+text-align: center;
+height: 30px;
+cursor: pointer;
+width: 50px;
+height: 30px;
+border: 1px solid black;
+border-radius: 30px;
+}
+.screen-mode select:hover{
+  background-color: rgb(244, 242, 242);
+}
+/* Course body */
 .card {
   border: 1px solid black;
   width: 300px;
@@ -7,10 +79,16 @@
   padding: 10px;
   text-align: center;
   gap: 30px;
-  margin: 20px;
+  margin: 40px 0px 0px 40px;
   font-family:sans-serif ;
   display: inline-block;
 }
+.card:hover{
+  cursor: pointer;
+
+}
+
+
 
 .card-img {
   width: 280px;
@@ -19,7 +97,36 @@
   border: 2px solid black;
   object-fit: cover;
 }
-.footer{
-  background-color: rgb(231, 59, 90);
+.card button{
+  background-color: rgb(89, 233, 233);
+  height: 40px;
+  width: 140px;
+  border: 1px solid black;
+  border-radius: 5px;
+font-weight: bold;
+}
+.card button:hover{
+  background-color: rgb(89, 175, 233);
+  cursor: pointer;
+  width: 145px;
+  height: 45px;
+}
+/* Footer Section */
+footer{
+background-color: rgb(235, 61, 61);
+
+  padding: 30px;
+  margin-top: 40px;
   
+}
+.footer-box{
+  display: flex;
+}
+.footer-box h3{
+color: rgb(14, 9, 9);
+}
+.footer-component li{
+list-style-type: none;
+color: rgb(48, 47, 47);
+
 }

@@ -1,31 +1,29 @@
-const var1 = "Super Figure";
-
+import PropTypes from 'prop-types'
 function Courses(props) {
-  // internal css
-  const styles = {
-    backgroundColor: "green",
-    color: "red",
-    border: "2px solid black",
-    padding: "20px",
-    textAlign: "center"
-  };
-   
+ /*  if(props.show==true){ */
   return ( 
-    
-        <div className="card">
-      <img className="card-img"
-        src="https://tse4.mm.bing.net/th/id/OIP.TI5kEO4aTFrh8YcIuBHROQHaKU?pid=Api&P=0&h=180"       alt="Shivani Rajashekar"
-        
-      />
-
-      
+    <div className="card">
+      <img className="card-img" src={props.img} alt={props.name} />
       <h1>{props.name}</h1>
-      <h2>{props.age}</h2>
+      <h2>{props.age} Seats Only</h2>
       <p>{props.price}</p>
+      <p>{props.Ratting}</p>
+      <button>{props.cart}</button>
     </div>
-     
-   
-  );
+   ); 
+   Courses.propTypes={
+    name:PropTypes.string,
+    age:PropTypes.number,
+
+   }
+   /*
 }
+else{
+  return(itt foryarn add prop-types
+ else block for conditional rencerinfg
+    <div className="card">Course not available</div>
+  ) */
+}
+
 
 export default Courses;
