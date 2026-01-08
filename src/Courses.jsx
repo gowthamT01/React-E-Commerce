@@ -25,12 +25,14 @@ function ApplyDiscount(disc){
         <h1>{props.name}</h1>
         <h2>{props.age} Seats Only</h2>
         <p>{discount}</p>
+       
         <button onClick={(event)=>BuyCourse(20,event)}>Buy Now</button>
       {/*    <button onClick={(event)=>{BuyCourse(20); console.log(event)}}>Buy Now</button> */}
       <button onClick={()=>ApplyDiscount(30)}>Apply Discount</button>
+   
       <p>{discount ? discount+ " Discount applied":"0% Discount Applied"}</p>
       <p>{purchased ? " Already Purchasedc with "+discount+" discount" :"Get it bow"}</p>
-      
+       <button onClick={()=>props.delete(props.id)}>Delete</button> here we deletebutton delete the content whre the btn is clicked .props.id give the reference
       </div>
     );
   }
