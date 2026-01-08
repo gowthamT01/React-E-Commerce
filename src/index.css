@@ -73,6 +73,7 @@ border-radius: 30px;
 }
 /* Course body */
 .card {
+  position: static;
   border: 1px solid black;
   width: 300px;
   border-radius: 8px;
