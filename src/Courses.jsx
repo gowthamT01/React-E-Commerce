@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 
 
 function Courses(props) {
@@ -13,12 +13,17 @@ function Courses(props) {
   console.log(setPurchased);
  
 }
+
 function ApplyDiscount(disc){
   console.log("Applied ",disc,"% Discount for ",props.name)
   setDiscount(true)
 
   setDiscount(discount-disc)
 }
+useEffect(()=>{
+  console.log("inside course Effect")
+  console.log(purchased);
+});
     return (
    /*   this is for consditional rendering */ props.name &&<div className="card">
         <img className="card-img" src={props.img} alt={props.name} />
@@ -28,11 +33,12 @@ function ApplyDiscount(disc){
        
         <button onClick={(event)=>BuyCourse(20,event)}>Buy Now</button>
       {/*    <button onClick={(event)=>{BuyCourse(20); console.log(event)}}>Buy Now</button> */}
-      <button onClick={()=>ApplyDiscount(30)}>Apply Discount</button>
+      <button onClick={()=>ApplyDiscount(100)}>Apply Discount</button>
    
-      <p>{discount ? discount+ " Discount applied":"0% Discount Applied"}</p>
-      <p>{purchased ? " Already Purchasedc with "+discount+" discount" :"Get it bow"}</p>
-       <button onClick={()=>props.delete(props.id)}>Delete</button> here we deletebutton delete the content whre the btn is clicked .props.id give the reference
+
+
+      <p>{purchased ? " Already Purchasedc with "+discount+" discount" :"Get it now"}</p>
+       <button onClick={()=>props.delete(props.id)}>Delete</button> {/* here we deletebutton delete the content whre the btn is clicked .props.id give the reference */}
       </div>
     );
   }

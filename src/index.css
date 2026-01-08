@@ -6,11 +6,12 @@ body{
 nav{
   position: sticky;
   top: -20px;
-  background-color: rgb(235, 61, 61);
+  background: linear-gradient(to right, #ff512f, #dd2476);
   display: flex;
   justify-content: space-around;
   height: 140px;
   text-align: center;
+  z-index: 999;
 }
 .header-logo{
   color: black;
@@ -73,48 +74,49 @@ border-radius: 30px;
 }
 /* Course body */
 .card {
-  position: static;
   border: 1px solid black;
   width: 300px;
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   text-align: center;
-  gap: 30px;
-  margin: 40px 0px 0px 40px;
-  font-family:sans-serif ;
+  margin: 40px 0 0 40px;
+  font-family: sans-serif;
   display: inline-block;
 }
-.card:hover{
-  cursor: pointer;
-
-}
-
-
 
 .card-img {
-  width: 280px;
-  height: 350px;
+  width: 230px;
+  height: 300px;
   border-radius: 8px;
   border: 2px solid black;
   object-fit: cover;
+  transition: transform 0.5s ease-in-out;
 }
+
+.card:hover .card-img {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
 .card button{
-  background-color: rgb(89, 233, 233);
-  height: 40px;
-  width: 140px;
-  border: 1px solid black;
-  border-radius: 5px;
+  background-color: rgb(249, 245, 245);
+  height: 35px;
+  width: 120px;
+  margin: 10px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius: 20px;
 font-weight: bold;
 }
 .card button:hover{
-  background-color: rgb(89, 175, 233);
+background: linear-gradient(to right, #ff512f, #dd2476);
+
   cursor: pointer;
-  width: 145px;
-  height: 45px;
+   border: 0.5px solid black;
+  width: 125px;
+  height: 38px;
 }
 /* Footer Section */
 footer{
-background-color: rgb(235, 61, 61);
+background: linear-gradient(to right, #ff512f, #dd2476);
 
   padding: 30px;
   margin-top: 40px;
