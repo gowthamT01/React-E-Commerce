@@ -1,7 +1,34 @@
 body{
   margin: 0px;
   padding: opx;
+
 }
+.app {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Foreground content */
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+}
+
 /* nav bar  */
 nav{
   position: sticky;
@@ -35,11 +62,11 @@ nav li{
   height: 20px;
   border-radius: 50px;
  transition: 1s transform;
-  transition: 1ms ease-in-out;
+
 }
 nav li:hover{
- font-size: 18px;
-border: 1px solid black;
+transform: scale(1.06);
+border-bottom:1px solid black;
  cursor: pointer;
  color: azure;
 }
