@@ -1,0 +1,13 @@
+{
+"courses":[
+    {"id":1, "img": "http://localhost:3000/assets/java.jpg", "name": "Java", "age": 30, "price": 1499 },
+    {"id":2, "img": "http://localhost:3000/assets/JS.jpg", "name": "JavaScript", "age": 50, "price": 999 },
+    {"id":3, "img": "http://localhost:3000/assets/py.jpg", "name": "Python", "age": 40, "price": 1999 },
+    {"id":4, "img": "http://localhost:3000/assets/Dev.jpg", "name": "DevOps", "age": 20, "price": 2999 },
+    {"id":5, "img":"http://localhost:3000/assets/AIML.jpg","name":"AI/ML","age":30,"price":4999},
+    {"id":6,"img":"http://localhost:3000/assets/AWS.jpg","name":"AWS","age":30,"price":3999},
+        {"id":7,"img":"http://localhost:3000/assets/DATA.jpg","name":"Data Analytics","age":30,"price":2999},
+          {"id":8,"img":"http://localhost:3000/assets/UIUX.jpg","name":"UI/UX","age":30,"price":2999}
+    
+  ]
+}

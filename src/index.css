@@ -24,7 +24,7 @@ body{
 nav{
   position: sticky;
   top: 0px;
-  background: linear-gradient(to right, #35f994, #0e5e1a);
+  background: linear-gradient(to right,#e9e9eb, rgb(80, 124, 236),#2727ef,#041dab);
   display: flex;
   justify-content: space-around;
   height: 100px;
@@ -60,7 +60,7 @@ border-bottom:1px solid black;
  color: azure;
 }
 .sign-in button{
-   background-color: rgb(235, 61, 61);
+   background-color: transparent;
   height: 50px;
   width: 120px;
   margin-top: 20px;
@@ -70,13 +70,12 @@ font-weight: bold;
 }
 .sign-in button:hover{
 cursor: pointer;
-height: 55px;
-  width: 125px;
+
   color: azure;
 border-color: azure;
 }
 .screen-mode select{
-background-color: rgb(255, 73, 73);
+background-color: rgb(8, 59, 170);
 text-align: center;
 height: 30px;
 cursor: pointer;
@@ -88,6 +87,77 @@ border-radius: 30px;
 .screen-mode select:hover{
   background-color: rgb(244, 242, 242);
 }
+/* Container */
+/* Container 1 */
+.container1{
+  background-image: url("src/img/Container1-img.jpeg");
+  background-size: cover;
+  background-position:right; /* center align */
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 90vh;
+   transition: transform 0.6s ease-in-out;
+}
+.container1 section {
+  padding: 150px 0px 0px 100px;
+  max-width: 600px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.container1:hover  section{
+  transform: scale(1.08);
+  
+}
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+  width: 100%;
+
+  
+}
+
+.sub-container1 img {
+  
+  width: 400px;
+  height: 400px;
+  margin: 40PX;
+border-radius: 20PX;
+}
+.sub-container2{
+  font-size: larger;
+
+}
+.sub-container2 h1{
+  font-size: 2em;
+}
+.sub-container2 p,h3{
+  font-size: 1.5em;
+  color: rgb(62, 58, 58);
+}
+/* Smooth transition setup */
+.sub-container1,
+.sub-container2{
+  transition: transform 0.5s ease; /* 0.5s smooth scaling */
+}
+
+/* Hover scale */
+.container2:hover .sub-container1,
+.container2:hover .sub-container2{
+  transform: scale(1.2);
+}
+
+/* WHEN SCROLL COMES */
+.show {
+  transform: translateX(0);
+}
+
+
+
+
 /* Course body */
 .card {
   border: 1px solid black;
@@ -123,16 +193,16 @@ border-radius: 30px;
 font-weight: bold;
 }
 .card button:hover{
-  background: linear-gradient(to right, #35f994, #0e5e1a);
+ background: linear-gradient(to right, rgb(32, 94, 252),#12129d);
 
   cursor: pointer;
-   border: 0.5px solid black;
+   border-bottom: 0.5px solid black;
   width: 125px;
   height: 38px;
 }
 /* Footer Section */
 footer{
-  background: linear-gradient(to right, #075d30, #3ae754);
+ background: linear-gradient(to right,#e9e9eb, rgb(80, 124, 236),#12129d,#041fbd);
 
   padding: 30px;
   margin-top: 40px;
