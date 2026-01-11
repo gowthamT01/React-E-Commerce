@@ -11,16 +11,7 @@ function App() {
   return (
     <>
     <Navbar/>
-  <video
-        className="bg-video"
-        autoPlay
-        muted
-        loop
-        playsInline
-      >
-        <source src="/bg-video.mp4" type="video/mp4" />
-      </video>
-      
+  
 
 <CourseList/>
       <Footer/>

@@ -9,7 +9,7 @@ function Courses(props) {
   console.log(props.name,"Purchased",discount,"%Discount")
   console.log(e);
   setPurchased(true);
-  
+
   console.log(setPurchased);
  
 }
@@ -20,10 +20,8 @@ function ApplyDiscount(disc){
 
   setDiscount(discount-disc)
 }
-useEffect(()=>{
-  console.log("inside course Effect")
-  console.log(purchased);
-});
+ 
+
     return (
    /*   this is for consditional rendering */ props.name &&<div className="card">
         <img className="card-img" src={props.img} alt={props.name} />

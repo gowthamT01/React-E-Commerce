@@ -20,12 +20,16 @@ function CourseList() {
     {id:5, img:AI,name:"AI/ML",age:30,price:4999},
     {id:6,img:AWS,name:"AWS",age:30,price:3999},
         {id:7,img:DATA,name:"Data Analytics",age:30,price:2999},
-          {id:7,img:UIUX,name:"UI/UX",age:30,price:2999}
+          {id:8,img:UIUX,name:"UI/UX",age:30,price:2999}
     
   ]);
+  const [dummy,setDummy]=useState(false);
   useEffect(()=>{
-    console.log("use Effect callled")
-  })
+    console.log("Course List useEffect called");
+    console.log(dummy)
+},[])
+
+  
   /* const [dummy,setDummy]=useState([1,2,3,4,5]);
 here created example list set useState */
 
@@ -33,6 +37,7 @@ here created example list set useState */
     const newCourses=courses.filter((course)=>course.id != id)//filtering for deleting courses
     console.log(id)
     setCourses(newCourses);//set value to the setcourse
+
 
   }
  
@@ -59,6 +64,7 @@ id={course.id}
   return( <>
   
   {coursesList}
+  <button onClick={()=>{setDummy(false)}}>Dummu botton</button>
   </>
   )
 } 

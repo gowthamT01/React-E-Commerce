@@ -12,8 +12,12 @@ function Navbar(){
             <li>Contact us</li>
             <li>About US</li>
         </ul>
+          
+
+        
+
     </div>
-    <div className="sign-in">
+        <div className="sign-in">
         <button>Sign Up</button>
     </div>
     <div className="screen-mode">
@@ -21,9 +25,8 @@ function Navbar(){
         <option value="light">☀️</option>
         <option value="dark">🌙</option>
      </select>
-        
-
     </div>
+  
         </nav>
     );
 
