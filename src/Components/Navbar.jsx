@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-
+import React, { useState, useEffect } from "react";
 function Navbar() {
+
   return (
     <nav>
       <div className="header-logo">
@@ -24,16 +25,16 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="sign-in">
-        <button>Sign Up</button>
+       <div className="sign-in">
+        <Link to="/auth">
+          <button>Sign Up</button>
+        </Link>
       </div>
 
-      <div className="screen-mode">
-        <select name="screen-mode" id="screen-mode">
-          <option value="light">☀️</option>
-          <option value="dark">🌙</option>
-        </select>
-      </div>
+  <div className="body-theme">
+    <button className="light" onclick="light()">☀️</button>
+    <button className="dark" onclick="dark">🌙</button>
+  </div>
     </nav>
   );
 }

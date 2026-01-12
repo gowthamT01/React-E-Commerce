@@ -7,18 +7,27 @@ function CourseList() {
 //creating ne state for course fo delete the course delete in the cards
   const [courses,setCourses] =useState();
   const [dummy,setDummy]=useState(false);
+  const [error,setError]=useState(null);
   useEffect(()=>{
+    setTimeout(()=>{
    
    
     fetch('http://localhost:3001/courses')
     .then(response=>{
+if(!response.ok){
+throw Error("Could't retrive data")
+}
       console.log(response)
      return response.json();//returning value
 
     })
-    .then (data=>setCourses(data));//adding data to setCourse objerct
-    
-    
+    .then (data=>setCourses(data))//adding data to setCourse objerct
+    .catch((error)=>{
+      console.log(error.message)
+      setError(error.message)
+
+    })
+    },2000);
 },[]);
 
   
@@ -40,9 +49,10 @@ here created example list set useState */
 /* const ageCourse=courses.filter((course)=>course.age<30) */
 if(!courses){
  return( <>
-
+ {!error &&  <img src="src/img/load.gif" alt="Loading" />}
+{error&&<p>{error}</p>}
   </>)
-}
+} 
   const coursesList =courses.map((course) => (
     <Courses
       key={course.id}

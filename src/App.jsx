@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import CourseList from "./pages/CourseList";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Auth from "./pages/Auth";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/courses" element={<CourseList />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/auth" element={<Auth />} /> {/* 👈 LOGIN / SIGNUP */}
       </Routes>
 
       <Footer />
