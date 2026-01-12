@@ -27,26 +27,10 @@ function Home() {
   </div>
 </div>
 
-      <section>
-        <h2>Our Courses</h2>
-        <ul>
-          <li>Python Full Stack</li>
-          <li>Web Development</li>
-          <li>React</li>
-          <li>Java</li>
-          <li>Interview Preparation</li>
-        </ul>
-      </section>
+  
 
-      {/* Why Choose Us */}
-      
-
-      {/* Call To Action */}
-      <section>
-        <h2>Ready to Start Your Career?</h2>
-        <button>Enroll Now</button>
-      </section>
-
+    
+ 
     </div>
   );
 }

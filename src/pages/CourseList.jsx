@@ -10,13 +10,14 @@ function CourseList() {
   useEffect(()=>{
    
    
-    fetch('http://localhost:3000/courses')
+    fetch('http://localhost:3001/courses')
     .then(response=>{
       console.log(response)
      return response.json();//returning value
 
     })
-    .then (data=>setCourses(data));
+    .then (data=>setCourses(data));//adding data to setCourse objerct
+    
     
 },[]);
 

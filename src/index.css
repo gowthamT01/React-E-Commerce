@@ -45,12 +45,18 @@ nav ul{
  
 }
 nav li{
+ 
    padding: 10px;
   margin: 10px;
   width: 100px;
   height: 20px;
   border-radius: 50px;
  transition: 1s transform;
+
+}
+nav a{
+  text-decoration: none;
+  color: #09090a;
 
 }
 nav li:hover{
@@ -200,6 +206,81 @@ font-weight: bold;
   width: 125px;
   height: 38px;
 }
+
+/*================ Contact page============== */
+/* Container */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2); /* Blue shadow */
+  font-family: Arial, sans-serif;
+  color: #0d3b66; /* Dark blue text */
+}
+
+/* Heading */
+.contact-container h1 {
+  text-align: center;
+  color: #007bff; /* Bright blue heading */
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* Form labels */
+.contact-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #0d3b66;
+}
+
+/* Input and textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #007bff; /* Blue border */
+  font-size: 16px;
+}
+
+/* Textarea height */
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Submit button */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+.contact-form button:hover {
+   background: linear-gradient(to right,#e9e9eb, rgb(144, 172, 241),#2686c2,#2e99e5);
+}
+
+/* Responsive */
+@media screen and (max-width: 650px) {
+  .contact-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
 /* Footer Section */
 footer{
  background: linear-gradient(to right,#e9e9eb, rgb(80, 124, 236),#12129d,#041fbd);
