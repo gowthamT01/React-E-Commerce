@@ -12,19 +12,19 @@ function CourseList() {
     setTimeout(()=>{
    
    
-    fetch('http://localhost:3001/courses')
+    fetch('http://localhost:3001/courses')//api fetching
     .then(response=>{
-if(!response.ok){
+if(!response.ok){//if api not fetshed ot give custom error
 throw Error("Could't retrive data")
 }
       console.log(response)
-     return response.json();//returning value
+     return response.json();//returning value ad json
 
     })
     .then (data=>setCourses(data))//adding data to setCourse objerct
     .catch((error)=>{
       console.log(error.message)
-      setError(error.message)
+      setError(error.message)//handling error if api is not fetched
 
     })
     },2000);
@@ -70,7 +70,7 @@ id={course.id}
   return( <>
   
   {coursesList}
-  <button onClick={()=>{setDummy(false)}}>Dummu botton</button>
+
   </>
   )
 } 
