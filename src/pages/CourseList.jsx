@@ -49,7 +49,7 @@ here created example list set useState */
 /* const ageCourse=courses.filter((course)=>course.age<30) */
 if(!courses){
  return( <>
- {!error &&  <img src="src/img/load.gif" alt="Loading" />}
+ {!error &&  <img className="load-img" src="src/img/load.gif" alt="Loading" />}
 {error&&<p>{error}</p>}
   </>)
 } 

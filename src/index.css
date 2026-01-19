@@ -209,17 +209,23 @@ font-weight: bold;
   width: 125px;
   height: 38px;
 }
-
+.load-img{
+  width:100px;
+  height:100px;
+  padding-left: 46;
+ 
+}
 /*================ Contact page============== */
 /* Container */
 .contact{
-  background-image: url("https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1920&q=80");
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80");
   background-position: center;
   background-size:cover ;
 }
 .contact-container {
+  margin-top: 50px;
   max-width: 600px;
-  margin: 50px auto;
+  margin: auto;
   padding: 30px;
   border-radius: 10px;
   background-image: url; /* White background */
@@ -231,7 +237,8 @@ font-weight: bold;
 /* Heading */
 .contact-container h1 {
   text-align: center;
-  color: #007bff; /* Bright blue heading */
+ 
+  color: #0b0b0b; /* Bright blue heading */
   margin-bottom: 25px;
   font-size: 2rem;
 }
@@ -241,7 +248,7 @@ font-weight: bold;
   display: block;
   margin-bottom: 15px;
   font-weight: bold;
-  color: #0d3b66;
+  color: #393737;
 }
 
 /* Input and textarea */
@@ -249,8 +256,10 @@ font-weight: bold;
 .contact-form textarea {
   width: 100%;
   padding: 10px;
+  background-color: white;
+   opacity: 0.7;
   margin-top: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #007bff; /* Blue border */
   font-size: 16px;
 }
